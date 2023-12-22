@@ -1,0 +1,116 @@
+html,body {
+    margin: auto;
+    height: 100%;
+    width:100%;
+    background-image: url("images/Japanese-Cherry-Blossom-Scenery-AI-Generated-4K-Wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar ul {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Algerian;
+    overflow: hidden;
+    position: relative;
+    right: 30px;
+}
+
+.navbar li {
+    list-style-type: none;
+    float: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navbar a:hover {
+    border-radius: 30px ;
+    background-color: antiquewhite;
+    animation-name: glow;
+    animation-duration: 2s;
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0px 0px 50px rgb(210, 104, 192);
+    }
+}
+
+.hd {
+    position: relative;
+    top: 30%;
+    left: 120px;
+    margin: 15px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: Ravie;
+    text-shadow: 2px 2px 4px #3498db, -2px -2px 4px #e74c3c;
+    color: black; /* text color */
+    width: 80%;
+    height: auto;
+    margin: 0 auto; /* Center the h1 horizontally */
+}
+
+h3 {
+    font-size: 2em;
+    font-family: Matura MT Script Capitals;
+    text-shadow: 2px 2px 4px #3498db, -2px -2px 4px #ff66b2;
+    padding-left: 150px;
+}
+
+.images img {
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed;
+}
+
+.images {
+    text-align: center;
+    float: right;
+    margin-right: 35px;
+    position: relative;
+    bottom: 40px;
+}
+
+h1::first-letter {
+    font-size: 150%;
+}
+
+/* Media query for screens up to 768 pixels wide */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden; /* Hide horizontal overflow on smaller screens */
+    }
+
+    h1 {
+        font-size: 3em; /* Adjust font size for smaller screens */
+        width: 100%; /* Make the h1 element take up the full width of the viewport */
+    }
+
+    h3 {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+    .images img {
+        width: auto; /* Make the image take up the full width of its container */
+        height: auto;
+    }
+
+    /* Add more responsive styles as needed */
+}
